@@ -8,27 +8,27 @@
 
 Meal Explorer Dashboard is a modern Angular web application that allows users to:
 
-Browse meals fetched from TheMealDB API
+-Browse meals fetched from TheMealDB API
 
-Search and filter meals
+-Search and filter meals
 
-View detailed information
+-View detailed information
 
-Create, edit, and delete custom meals (in-memory CRUD)
+-Create, edit, and delete custom meals (in-memory CRUD)
 
-Navigate using a clean dashboard & responsive sidebar
+-Navigate using a clean dashboard & responsive sidebar
 
 This project was built as part of a technical assessment, focusing on:
 
-Clean Angular architecture
+-Clean Angular architecture
 
-Communication & clarification
+-Communication & clarification
 
-UI/UX quality
+-UI/UX quality
 
-API integration
+-API integration
 
-Local CRUD operations
+-Local CRUD operations
 
 🚀 Main Features
 
@@ -52,7 +52,7 @@ Local CRUD operations
 
 .Search / filter custom meals
 
- .Stored locally only (in-memory)
+.Stored locally only (in-memory)
 
 🔸 3) Dashboard
 
@@ -62,9 +62,9 @@ Local CRUD operations
 
 🔸 4) Responsive Sidebar
 
-Full sidebar on desktop
+.Full sidebar on desktop
 
-Icon-only sidebar on mobile for better UX
+.Icon-only sidebar on mobile for better UX
 
 📖 How to Use the App
 
