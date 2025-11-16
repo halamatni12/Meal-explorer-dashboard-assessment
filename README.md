@@ -1,124 +1,123 @@
- Meal Explorer Dashboard
-Live Demo (Firebase Hosting)
+🌟 Meal Explorer Dashboard
+🔗 Live Demo (Firebase Hosting)
 
-🔗  https://meal-explorer--dashboard.web.app
+👉 https://meal-explorer--dashboard.web.app
 
 📌 Project Overview
 
-Meal Explorer Dashboard is an Angular application that allows users to:
+Meal Explorer Dashboard is a modern Angular web application that allows users to:
 
 Browse meals fetched from TheMealDB API
 
 Search and filter meals
 
-View detailed meal information
+View detailed information
 
 Create, edit, and delete custom meals (in-memory CRUD)
 
-Navigate the app using a clean and responsive layout
+Navigate using a clean dashboard & responsive sidebar
 
-Manage both API meals and custom meals through a modern dashboard UI
+This project was built as part of a technical assessment, focusing on:
 
-This project was created as part of a technical assessment focusing on clean code, architecture, and communication.
+Clean Angular architecture
+
+Communication & clarification
+
+UI/UX quality
+
+API integration
+
+Local CRUD operations
 
 🚀 Main Features
+🔸 1) API Meals
 
-1️⃣ API Meals
+✔ Fetch meals from TheMealDB
+✔ Search meals by name
+✔ Filter by category
+✔ View full meal details
 
-Fetch meals from TheMealDB
+🔸 2) Custom Meals (Local CRUD)
 
-Search meals by name
+✔ Add new custom meals
+✔ Edit existing meals
+✔ Delete meals
+✔ Search / filter custom meals
+✔ Stored locally only (in-memory)
 
-Filter meals by category
+🔸 3) Dashboard
 
-View detailed meal information
+✔ Simple introduction screen
+✔ Navigation to API Meals & Custom Meals
 
-2️⃣ Custom Meals (Local CRUD)
-
-Add custom meals
-
-Edit meals
-
-Delete meals
-
-Search, filter, and sort them
-
-Stored in memory (no backend)
-
-3️⃣ Dashboard
-
-Intro page with clear navigation to API Meals & Custom Meals sections
-
-4️⃣ Responsive Sidebar
+🔸 4) Responsive Sidebar
 
 Full sidebar on desktop
 
-Auto-optimized layout on mobile devices
+Icon-only sidebar on mobile for better UX
 
 📖 How to Use the App
+🏠 1. Open the Dashboard
 
-Open the Dashboard
 You will see two main sections:
 
 API Meals
 
 Custom Meals
 
-Browse API Meals
+🍽️ 2. Browsing API Meals
 
-Click API Meals from the sidebar
+Open API Meals from sidebar
 
-Use the search bar to find meals by name
+Use search bar to find meals
 
-Use filters to refine your results
+Apply filters
 
-Click View Details to see full meal information
+Click View Details to see ingredients & instructions
 
-Manage Custom Meals
+✏️ 3. Managing Custom Meals
 
-Click Custom Meals from the sidebar
+Go to Custom Meals
 
-Add a new meal using the Add Meal button
+Click Add Meal
 
-Edit existing meals
+Edit or delete meals anytime
 
-Delete meals
+Use search & filter to organize your list
 
-Use the search and filter tools to manage your list
+📱 4. Mobile Sidebar
 
-Responsive Sidebar (Mobile)
+Automatically switches to icons only
 
-On mobile screens, the sidebar becomes icon-only to maximize space
+Allows more space for content
 
-Navigation remains clear and accessible
+🔙 5. Return to Dashboard
 
-Returning to Dashboard
-
-Click Dashboard any time to return to the home overview
+Click Dashboard anytime to return home.
 
 🧰 Tech Stack
-Technology	Usage
-Angular 17+ (Standalone Components)	UI framework
+Technology	Purpose
+Angular 17+ (Standalone)	Main UI framework
 TypeScript	Application logic
-Bootstrap 5	Styling & layouts
-Angular Signals	Lightweight state management
+Bootstrap 5	Styling & layout
+Angular Signals	State management
 Firebase Hosting	Deployment
-TheMealDB API	External API
-📦 Installation
-1. Install dependencies
+TheMealDB API	Public meals API
+📦 Installation & Setup
+1️⃣ Install dependencies
 npm install
 
-2. Run the development server
+2️⃣ Run development server
 ng serve
 
 
-Runs on:
+App runs on:
 👉 http://localhost:4200/
 
-3. Build for production
+3️⃣ Production build
 ng build --configuration production
 
-4. Deploy to Firebase (already deployed)
+4️⃣ Deploy to Firebase (already deployed)
 firebase deploy --only hosting
 
 📁 Folder Structure (Simplified)
@@ -141,17 +140,20 @@ src/app/
 
 📝 Assumptions & Notes
 
-Custom meals stored locally in memory (no database)
+Custom meals are stored in memory only
 
-Angular Signals chosen for reactive state handling
+TheMealDB is a public API requiring no authentication
 
-TheMealDB API is public and requires no authentication
+Angular Signals selected for simplicity & performance
 
-Project follows a clean feature-based architecture
+Clean feature-based architecture
 
-UI is fully responsive and user-friendly
+Fully responsive UI
 
 🔗 Live Demo
 
-Hosted on Firebase:
-👉  https://meal-explorer--dashboard.web.app
+👉 https://meal-explorer--dashboard.web.app
+
+✔️ Final Notes
+
+This project focuses on clarity, structure, clean UI, and smooth navigation—meeting the expectations of a front-end technical assessment
