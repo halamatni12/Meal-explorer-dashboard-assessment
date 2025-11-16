@@ -22,6 +22,7 @@ Manage both API meals and custom meals through a modern dashboard UI
 This project was created as part of a technical assessment focusing on clean code, architecture, and communication.
 
 🚀 Main Features
+
 1️⃣ API Meals
 
 Fetch meals from TheMealDB
