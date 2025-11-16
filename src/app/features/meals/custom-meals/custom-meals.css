@@ -1,0 +1,138 @@
+/* =======================================
+   PAGE LAYOUT & CARD
+======================================= */
+
+.card {
+  border-radius: 14px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.06) !important;
+}
+
+/* =======================================
+   INPUTS & SELECTS (MODERN STYLE)
+======================================= */
+
+.form-control,
+.form-select {
+  height: 45px;
+  font-size: 0.93rem;
+  border-radius: 10px !important;
+  border: 1px solid #ddd;
+  transition: 0.25s ease-in-out;
+  padding-left: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--first-color);
+  box-shadow: 0 0 0 3px rgba(219,152,77,0.15);
+}
+
+/* =======================================
+   TABLE DESIGN
+======================================= */
+
+.table {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.table thead tr {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+.table tbody tr {
+  transition: 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(219,152,77,0.09);
+}
+
+/* Image column */
+.table img {
+  border-radius: 10px;
+}
+
+/* =======================================
+   BUTTONS
+======================================= */
+
+.btn-custom {
+  background-color: var(--first-color) !important;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #c67830 !important;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 8px;
+  padding: 7px 16px;
+  border: none;
+  transition: 0.25s ease-in-out;
+}
+
+.btn-delete:hover {
+  background-color: #a82833;
+}
+
+/* =======================================
+   RESPONSIVE DESIGN
+======================================= */
+
+/* Mobile screens */
+@media (max-width: 768px) {
+
+  .row.g-3 > div {
+    margin-bottom: 12px;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.85rem;
+    height: 42px;
+  }
+
+  .btn-custom {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .table-responsive {
+    border-radius: 12px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.85rem;
+    padding: 10px !important;
+  }
+
+  .table img {
+    width: 55px !important;
+    height: 55px !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+
+  h2.fw-bold {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 12px !important;
+  }
+}

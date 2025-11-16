@@ -1,0 +1,33 @@
+<div class="container mt-4">
+    <h2 class="fw-bold mb-3">Add New Meal</h2>
+    <form (ngSubmit)="save()">
+<div class="mb-3">
+<label class="form-label">Meal Name</label>
+<input type="text" class="form-control" [(ngModel)]="meal.name" name="name"required>
+</div>
+<div class="mb-3">
+<label class="form-label">Category</label>
+<input type="text" class="form-control" [(ngModel)]="meal.category" name="category"required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Price</label>
+<input type="text" class="form-control" [(ngModel)]="meal.price" name="price"required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Description</label>
+<textarea class="form-control" rows="3" [(ngModel)]="meal.description" name="description"></textarea>
+</div>
+<div class="mb-3">
+<label class="form-label">Image</label>
+<input type="file" class="form-control" accept="image/*" (change)="onImageSelected($event)">
+</div>
+
+<div *ngIf="meal.image"class="mb-3">
+    <img [src]="meal.image" class="img-preview rounded">
+
+</div>
+<button class="btn-custom">Save Meal</button>
+    </form>
+</div>

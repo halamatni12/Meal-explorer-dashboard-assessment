@@ -1,0 +1,16 @@
+.content{
+    margin-left: var(--nav-width);
+    margin-top: 3rem;
+    padding:1rem;
+    transition: 0.3s ease;
+}
+.sidebar-collapsed + .content{
+    margin-left: var(--nav-width-collapsed) !important;
+}
+@media (max-width:768px) {
+   .content{
+    margin-left: 10px !important;
+    margin-top: 3.5rem;
+   
+} 
+}

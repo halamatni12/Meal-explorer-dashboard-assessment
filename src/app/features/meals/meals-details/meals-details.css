@@ -1,0 +1,110 @@
+
+.back-btn {
+  position: fixed;
+  top: 63px;         
+  right: 20px;         
+  z-index: 9999;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #db984d;
+  font-size: 14px; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-btn i {
+  font-size: 16px;     /* 🔥 الأيقونة أصغر */
+}
+.back-btn:hover {
+  color: #ffe7c8;
+  transition: 0.2s ease;
+}
+
+/* Full Page Card */
+.details-card {
+  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Meal Image */
+.details-img {
+  width: 350px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.meal-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Tags */
+.meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tag {
+  background: #ffe7c8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Instructions */
+.secttion-title {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.instaructions {
+  line-height: 1.7;
+  font-size: 16px;
+  white-space: pre-line;
+  color: #444;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+  .details-container {
+    margin-left: 0;
+  }
+
+  .back-btn {
+    left: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .details-img {
+    width: 100%;
+  }
+
+  .meal-title {
+    font-size: 26px;
+  }
+
+  .secttion-title {
+    font-size: 20px;
+  }
+ 
+}
+@media (max-width: 768px) {
+  .back-btn {
+    top: 45px !important;    
+    left: 350px !important;    
+    position: absolute !important;
+  }
+}

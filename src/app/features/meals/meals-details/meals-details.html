@@ -1,0 +1,17 @@
+<div class="details-container" *ngIf="meal">
+    <button class="back-btn" (click)="goBack()">Back<i class="bx bx-chevron-right"></i></button>
+            <div class="details-card">
+                <img [src]="meal.strMealThumb" class="details-img" width="300">
+                <h4 class="meal-title">{{meal.strMeal}}</h4>
+
+                <div class="meta">
+                    <span class="tag">{{meal.strCategory}}</span>
+                    <span class="tag">{{meal.strArea}}</span>
+                </div>
+                <h4 class="secttion-title mt-4">Instructions</h4>
+                <p class="instaructions">
+                    {{meal.strInstructions}}
+                </p>
+
+            </div>
+</div>

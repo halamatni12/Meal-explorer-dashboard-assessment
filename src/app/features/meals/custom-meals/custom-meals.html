@@ -1,0 +1,92 @@
+<div class="container-fluid py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">My Custom Meals</h2>
+        <button routerLink="/meals/add" class="btn-custom">
+         Add Meal
+        </button>
+
+    </div>
+  <div class="card p-3 mb-4 shadow-sm">
+
+    <div class="row g-3">
+
+      <!-- Search -->
+      <div class="col-md-4">
+        <input type="text"
+               class="form-control"
+               placeholder="Search meals..."
+               [(ngModel)]="searchText"
+               (input)="applyFilters()">
+      </div>
+
+      <!-- Filter by Category -->
+      <div class="col-md-4">
+        <select class="form-select"
+                [(ngModel)]="selectedCategory"
+                (change)="applyFilters()">
+          <option value="">All Categories</option>
+          <option *ngFor="let c of categories" [value]="c">{{ c }}</option>
+        </select>
+      </div>
+
+      <!-- Sorting -->
+      <div class="col-md-4">
+        <select class="form-select"
+                [(ngModel)]="sortBy"
+                (change)="applyFilters()">
+          <option value="">Sort By</option>
+          <option value="name">Name (A→Z)</option>
+          <option value="price">Price (Low→High)</option>
+          <option value="category">Category (A→Z)</option>
+        </select>
+      </div>
+
+    </div>
+
+  </div>
+<div class="table-responsive shadow rounded bg-white">
+<table class="table align-middle mb-0">
+    <thead class="table-light">
+<tr>
+    <th class="px-4">Image</th>
+    <th class="px-4">Name</th>
+    <th class="px-4">Category</th>
+    <th class="px-4">Price</th>
+    <th class="px-4">Description</th>
+    <th class="px-4 text-end">Actions</th>
+</tr>
+    </thead>
+    <tbody>
+<tr *ngFor="let meal of filteredMeals" class="table-row-hover">
+<td class="px-4">
+    <img *ngIf="meal.image"
+    [src]="meal.image"
+    class="rounded"
+    style="width: 70px;height:70px ;object-fit: cover;">
+</td>
+<td class="px-4">{{meal.name}}</td>
+<td class="px-4">{{meal.category}}</td>
+<td class="px-4  fw-bold">${{meal.price}}</td>
+<td class="px-4">
+    <span class="text-muted small">{{meal.description}}</span></td>
+<td class="px-4 text-end">
+    <button class="btn-custom btn-sm me-2" [routerLink]="['/meals/edit',meal.id]">
+        Edit
+    </button>
+
+    <button class="btn-delete btn-sm" (click)="deleteMeal(meal.id)">
+        Delete
+    </button>
+</td>
+
+</tr>
+
+
+    </tbody>
+</table>
+
+</div>
+
+
+
+</div>

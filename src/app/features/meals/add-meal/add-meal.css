@@ -1,0 +1,19 @@
+.img-preview {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn-custom {
+  background-color: var(--first-color) !important;
+  border-color: var(--first-color) !important;
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #c67830 !important; /* darker shade */
+}
