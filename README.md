@@ -32,23 +32,31 @@ Local CRUD operations
 🚀 Main Features
 🔸 1) API Meals
 
-✔ Fetch meals from TheMealDB
-✔ Search meals by name
-✔ Filter by category
-✔ View full meal details
+.Fetch meals from TheMealDB
+
+.Search meals by name
+
+.Filter by category
+
+.View full meal details
 
 🔸 2) Custom Meals (Local CRUD)
 
-✔ Add new custom meals
-✔ Edit existing meals
-✔ Delete meals
-✔ Search / filter custom meals
-✔ Stored locally only (in-memory)
+. Add new custom meals
+
+.Edit existing meals
+
+ .Delete meals
+
+.Search / filter custom meals
+
+ .Stored locally only (in-memory)
 
 🔸 3) Dashboard
 
-✔ Simple introduction screen
-✔ Navigation to API Meals & Custom Meals
+.Simple introduction screen
+
+.Navigation to API Meals & Custom Meals
 
 🔸 4) Responsive Sidebar
 
