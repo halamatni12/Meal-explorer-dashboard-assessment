@@ -1,4 +1,5 @@
 🌟 Meal Explorer Dashboard
+
 🔗 Live Demo (Firebase Hosting)
 
 👉 https://meal-explorer--dashboard.web.app
