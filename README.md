@@ -30,6 +30,7 @@ API integration
 Local CRUD operations
 
 🚀 Main Features
+
 🔸 1) API Meals
 
 .Fetch meals from TheMealDB
@@ -65,6 +66,7 @@ Full sidebar on desktop
 Icon-only sidebar on mobile for better UX
 
 📖 How to Use the App
+
 🏠 1. Open the Dashboard
 
 You will see two main sections:
@@ -104,28 +106,42 @@ Allows more space for content
 Click Dashboard anytime to return home.
 
 🧰 Tech Stack
+
 Technology	Purpose
+
 Angular 17+ (Standalone)	Main UI framework
+
 TypeScript	Application logic
+
 Bootstrap 5	Styling & layout
+
 Angular Signals	State management
+
 Firebase Hosting	Deployment
+
 TheMealDB API	Public meals API
+
 📦 Installation & Setup
+
 1️⃣ Install dependencies
+
 npm install
 
 2️⃣ Run development server
+
 ng serve
 
 
 App runs on:
+
 👉 http://localhost:4200/
 
 3️⃣ Production build
+
 ng build --configuration production
 
 4️⃣ Deploy to Firebase (already deployed)
+
 firebase deploy --only hosting
 
 📁 Folder Structure (Simplified)
