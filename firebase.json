@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "meal-explorer--dashboard",
+    "public": "dist/meal-explorer",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

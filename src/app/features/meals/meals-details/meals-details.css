@@ -15,14 +15,14 @@
   justify-content: center;
 }
 .back-btn i {
-  font-size: 16px;     /* 🔥 الأيقونة أصغر */
+  font-size: 16px;     
 }
 .back-btn:hover {
   color: #ffe7c8;
   transition: 0.2s ease;
 }
 
-/* Full Page Card */
+
 .details-card {
   width: 100%;
   background: white;
@@ -31,7 +31,7 @@
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
-/* Meal Image */
+
 .details-img {
   width: 350px;
   border-radius: 12px;
@@ -39,7 +39,6 @@
   box-shadow: 0 3px 12px rgba(0,0,0,0.15);
 }
 
-/* Title */
 .meal-title {
   font-size: 30px;
   font-weight: 700;
@@ -47,7 +46,6 @@
   color: #333;
 }
 
-/* Tags */
 .meta {
   display: flex;
   gap: 10px;
@@ -61,7 +59,6 @@
   font-size: 14px;
 }
 
-/* Instructions */
 .secttion-title {
   font-size: 22px;
   margin-top: 20px;
@@ -75,7 +72,6 @@
   color: #444;
 }
 
-/* ===== Responsive ===== */
 
 @media (max-width: 900px) {
   .details-container {

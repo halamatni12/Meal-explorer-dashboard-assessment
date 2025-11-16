@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
     standalone: true, 
   imports: [CommonModule,RouterOutlet,Sidebar],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected readonly title = signal('meal-explorer');

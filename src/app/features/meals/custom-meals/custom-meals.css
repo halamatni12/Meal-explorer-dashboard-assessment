@@ -1,6 +1,4 @@
-/* =======================================
-   PAGE LAYOUT & CARD
-======================================= */
+
 
 .card {
   border-radius: 14px;
@@ -9,9 +7,7 @@
   box-shadow: 0px 4px 10px rgba(0,0,0,0.06) !important;
 }
 
-/* =======================================
-   INPUTS & SELECTS (MODERN STYLE)
-======================================= */
+
 
 .form-control,
 .form-select {
@@ -29,9 +25,7 @@
   box-shadow: 0 0 0 3px rgba(219,152,77,0.15);
 }
 
-/* =======================================
-   TABLE DESIGN
-======================================= */
+
 
 .table {
   border-radius: 14px;
@@ -51,14 +45,12 @@
   background-color: rgba(219,152,77,0.09);
 }
 
-/* Image column */
+
 .table img {
   border-radius: 10px;
 }
 
-/* =======================================
-   BUTTONS
-======================================= */
+
 
 .btn-custom {
   background-color: var(--first-color) !important;
@@ -87,11 +79,7 @@
   background-color: #a82833;
 }
 
-/* =======================================
-   RESPONSIVE DESIGN
-======================================= */
 
-/* Mobile screens */
 @media (max-width: 768px) {
 
   .row.g-3 > div {
@@ -125,7 +113,6 @@
   }
 }
 
-/* Extra small screens */
 @media (max-width: 480px) {
 
   h2.fw-bold {
@@ -136,3 +123,25 @@
     padding: 12px !important;
   }
 }
+.actions-cell {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+@media (max-width: 576px) {
+  .actions-cell button {
+    width: 110px !important;
+    text-align: center;
+    display: block;
+    margin: 0 !important;     
+  }
+
+  .actions-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+  }
+}
+

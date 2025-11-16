@@ -1,59 +1,156 @@
-# MealExplorer
+ Meal Explorer Dashboard
+Live Demo (Firebase Hosting)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
+🔗  https://meal-explorer--dashboard.web.app
 
-## Development server
+📌 Project Overview
 
-To start a local development server, run:
+Meal Explorer Dashboard is an Angular application that allows users to:
 
-```bash
+Browse meals fetched from TheMealDB API
+
+Search and filter meals
+
+View detailed meal information
+
+Create, edit, and delete custom meals (in-memory CRUD)
+
+Navigate the app using a clean and responsive layout
+
+Manage both API meals and custom meals through a modern dashboard UI
+
+This project was created as part of a technical assessment focusing on clean code, architecture, and communication.
+
+🚀 Main Features
+1️⃣ API Meals
+
+Fetch meals from TheMealDB
+
+Search meals by name
+
+Filter meals by category
+
+View detailed meal information
+
+2️⃣ Custom Meals (Local CRUD)
+
+Add custom meals
+
+Edit meals
+
+Delete meals
+
+Search, filter, and sort them
+
+Stored in memory (no backend)
+
+3️⃣ Dashboard
+
+Intro page with clear navigation to API Meals & Custom Meals sections
+
+4️⃣ Responsive Sidebar
+
+Full sidebar on desktop
+
+Auto-optimized layout on mobile devices
+
+📖 How to Use the App
+
+Open the Dashboard
+You will see two main sections:
+
+API Meals
+
+Custom Meals
+
+Browse API Meals
+
+Click API Meals from the sidebar
+
+Use the search bar to find meals by name
+
+Use filters to refine your results
+
+Click View Details to see full meal information
+
+Manage Custom Meals
+
+Click Custom Meals from the sidebar
+
+Add a new meal using the Add Meal button
+
+Edit existing meals
+
+Delete meals
+
+Use the search and filter tools to manage your list
+
+Responsive Sidebar (Mobile)
+
+On mobile screens, the sidebar becomes icon-only to maximize space
+
+Navigation remains clear and accessible
+
+Returning to Dashboard
+
+Click Dashboard any time to return to the home overview
+
+🧰 Tech Stack
+Technology	Usage
+Angular 17+ (Standalone Components)	UI framework
+TypeScript	Application logic
+Bootstrap 5	Styling & layouts
+Angular Signals	Lightweight state management
+Firebase Hosting	Deployment
+TheMealDB API	External API
+📦 Installation
+1. Install dependencies
+npm install
+
+2. Run the development server
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Runs on:
+👉 http://localhost:4200/
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+3. Build for production
+ng build --configuration production
 
-```bash
-ng generate component component-name
-```
+4. Deploy to Firebase (already deployed)
+firebase deploy --only hosting
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+📁 Folder Structure (Simplified)
+src/app/
+  core/
+    models/
+    services/
+  features/
+    dashboard/
+    meals/
+      meals-list/
+      meals-details/
+      add-meal/
+      edit-meal/
+      custom-meals/
+  sidebar/
+  app.routes.ts
+  app.html
+  app.ts
 
-```bash
-ng generate --help
-```
+📝 Assumptions & Notes
 
-## Building
+Custom meals stored locally in memory (no database)
 
-To build the project run:
+Angular Signals chosen for reactive state handling
 
-```bash
-ng build
-```
+TheMealDB API is public and requires no authentication
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Project follows a clean feature-based architecture
 
-## Running unit tests
+UI is fully responsive and user-friendly
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+🔗 Live Demo
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Hosted on Firebase:
+👉  https://meal-explorer--dashboard.web.app

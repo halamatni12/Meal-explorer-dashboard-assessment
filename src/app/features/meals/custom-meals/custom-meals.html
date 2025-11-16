@@ -70,6 +70,7 @@
 <td class="px-4">
     <span class="text-muted small">{{meal.description}}</span></td>
 <td class="px-4 text-end">
+  <div class="actions-cell">
     <button class="btn-custom btn-sm me-2" [routerLink]="['/meals/edit',meal.id]">
         Edit
     </button>
@@ -77,6 +78,7 @@
     <button class="btn-delete btn-sm" (click)="deleteMeal(meal.id)">
         Delete
     </button>
+    </div>
 </td>
 
 </tr>

@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "meal-explorer--dashboard"
+  },
+  "targets": {
+    "meal-explorer--dashboard": {
+      "hosting": {
+        "mealTarget": [
+          "meal-explorer--dashboard"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

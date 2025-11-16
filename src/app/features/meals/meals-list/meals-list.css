@@ -1,4 +1,4 @@
-/* ===== TOP BAR ===== */
+
 .top-bar {
   display: flex;
   align-items: center;
@@ -8,11 +8,10 @@
   border-radius: 14px;
   
   margin: 20px 0;
-  flex-wrap: wrap; /* responsive */
+  flex-wrap: wrap; 
 }
 
 
-/* ===== TOTAL BOX ===== */
 .total-box {
   background: rgb(252, 248, 246);
   padding: 10px 16px;
@@ -35,7 +34,6 @@
 }
 
 
-/* ===== SEARCH BOX ===== */
 .search-box {
   flex: 1;
   display: flex;
@@ -67,7 +65,6 @@
 }
 
 
-/* ===== FILTER (Dropdown) ===== */
 .filter-box {
   position: relative;
   width: 180px;
@@ -90,7 +87,6 @@
   border-color: #db984d;
 }
 
-/* ---- AIRBNB LOOK ---- */
 .filter-selected {
   background: #faf7f5;
   padding: 12px 18px;
@@ -135,7 +131,6 @@
   color: #d17a39;
 }
 
-/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column;

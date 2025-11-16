@@ -26,14 +26,10 @@ export class Sidebar implements AfterViewInit {
             return;
 
           } else {
-            // show navbar
             nav.classList.toggle('collapsed')
-            // change icon
             headerpd.classList.toggle('sidebar-collapsed')
 
-            // add padding to body
             bodypd.classList.toggle('sidebar-collapsed')
-            // add padding to header
           }
           toggle.classList.toggle('bx-x')
 
@@ -43,7 +39,6 @@ export class Sidebar implements AfterViewInit {
 
     showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
 
-    /*===== LINK ACTIVE =====*/
     const linkColor = document.querySelectorAll('.nav_link')
 
     function colorLink(this: any) {
